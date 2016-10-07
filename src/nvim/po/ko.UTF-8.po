@@ -18,26 +18,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../api/private/helpers.c:201
-#, fuzzy
 msgid "Unable to get option value"
-msgstr "옵션 인자 뒤에 쓰레기 값"
+msgstr "옵션 값을 받아올 수 없습니다"
 
 #: ../api/private/helpers.c:204
 msgid "internal error: unknown option type"
-msgstr ""
+msgstr "내부 에러: 알 수 없는 옵션"
 
 #: ../buffer.c:92
 msgid "[Location List]"
-msgstr "[위치 목록]"
+msgstr "[Location 목록]"
 
 #: ../buffer.c:93
 msgid "[Quickfix List]"
 msgstr "[Quickfix 목록]"
 
 #: ../buffer.c:94
-#, fuzzy
 msgid "E855: Autocommands caused command to abort"
-msgstr "E812: Autocommand가 버퍼나 버퍼이름을 바꾸었습니다"
+msgstr "E855: Autocommand가 명령을 강제로 중지하였습니다"
 
 #: ../buffer.c:135
 msgid "E82: Cannot allocate any buffer, exiting..."
@@ -61,7 +59,7 @@ msgstr "E517: 완전히 지워진 버퍼가 없습니다"
 
 #: ../buffer.c:772
 msgid "1 buffer unloaded"
-msgstr "버퍼 한 개가 내려졌습니다"
+msgstr "버퍼 1 개가 내려졌습니다"
 
 #: ../buffer.c:774
 #, c-format
@@ -70,7 +68,7 @@ msgstr "버퍼 %d 개가 내려졌습니다"
 
 #: ../buffer.c:777
 msgid "1 buffer deleted"
-msgstr "버퍼 한 개가 지워졌습니다"
+msgstr "버퍼 1 개가 지워졌습니다"
 
 #: ../buffer.c:779
 #, c-format
@@ -79,7 +77,7 @@ msgstr "버퍼 %d 개가 지워졌습니다"
 
 #: ../buffer.c:782
 msgid "1 buffer wiped out"
-msgstr "버퍼 한 개가 완전히 지워졌습니다"
+msgstr "버퍼 1 개가 완전히 지워졌습니다"
 
 #: ../buffer.c:784
 #, c-format
@@ -151,7 +149,7 @@ msgstr "E95: 이 이름을 가진 버퍼가 이미 있습니다"
 
 #: ../buffer.c:2498
 msgid " [Modified]"
-msgstr " [바뀜]"
+msgstr " [수정됨]"
 
 #: ../buffer.c:2501
 msgid "[Not edited]"
@@ -313,7 +311,7 @@ msgstr "E103: \"%s\" 버퍼는 diff 상태가 아닙니다"
 
 #: ../diff.c:2193
 msgid "E787: Buffer changed unexpectedly"
-msgstr "E787: 버퍼가 모르는 사이에 바뀌었습니다"
+msgstr "E787: 버퍼가 예기치 않게 바뀌었습니다"
 
 #: ../digraph.c:1598
 msgid "E104: Escape not allowed in digraph"
@@ -329,7 +327,7 @@ msgstr "E105: 불러들인 파일에서 :loadkeymap을 사용하지 않았습니
 
 #: ../digraph.c:1821
 msgid "E791: Empty keymap entry"
-msgstr "E791: 키맵 엔트리가 비어있음"
+msgstr "E791: 키맵 엔트리가 비어있습니다"
 
 #: ../edit.c:82
 msgid " Keyword completion (^N^P)"
@@ -717,12 +715,12 @@ msgstr "E117: 모르는 함수: %s"
 #: ../eval.c:7383
 #, c-format
 msgid "E119: Not enough arguments for function: %s"
-msgstr "E119: 함수에 적은 인자 넘김: %s"
+msgstr "E119: 함수를 호출하기 위한 인자가 부족합니다: %s"
 
 #: ../eval.c:7387
 #, c-format
 msgid "E120: Using <SID> not in a script context: %s"
-msgstr "E120: 스크립트 콘텍스트 밖에서 <SID> 사용: %s"
+msgstr "E120: 스크립트의 문장  밖에서 <SID> 사용: %s"
 
 #: ../eval.c:7391
 #, c-format
@@ -740,7 +738,7 @@ msgstr "-c 인자"
 
 #: ../eval.c:7907
 msgid "E699: Too many arguments"
-msgstr "E699: 너무 많은 인자"
+msgstr "E699: 인자가 너무 많습니다"
 
 #: ../eval.c:8073
 msgid "E785: complete() can only be used in Insert mode"
@@ -835,12 +833,11 @@ msgstr "-c 인자"
 
 #: ../eval.c:13776
 msgid "E702: Sort compare function failed"
-msgstr "E702: 정렬 비교 기능이 실패했습니다"
+msgstr "E702: Sort compare 함수가 올바른 작동에 실패했습니다"
 
 #: ../eval.c:13806
-#, fuzzy
 msgid "E882: Uniq compare function failed"
-msgstr "E702: 정렬 비교 기능이 실패했습니다"
+msgstr "E882: Uniq compare 함수가 올바른 작동에 실패했습니다"
 
 #: ../eval.c:14085
 msgid "(Invalid)"
@@ -848,7 +845,7 @@ msgstr "(잘못되었습니다)"
 
 #: ../eval.c:14590
 msgid "E677: Error writing temp file"
-msgstr "E677: 임시 파일 쓰기 에러"
+msgstr "E677: 임시 파일을 쓰는 도중 에러가 발생하였습니다"
 
 #: ../eval.c:16159
 msgid "E805: Using a Float as a Number"
@@ -926,22 +923,21 @@ msgstr "E123: 정의 안 된 함수: %s"
 msgid "E124: Missing '(': %s"
 msgstr "E124: '('가 없음: %s"
 
-#: ../eval.c:17293
-#, fuzzy
+#: ../eval.c:19355
 msgid "E862: Cannot use g: here"
-msgstr "E284: IC 값을 설정할 수 없습니다"
+msgstr "E862: g: 를 여기에서 사용할 수 없습니다"
 
-#: ../eval.c:17312
+#: ../eval.c:19374
 #, c-format
 msgid "E125: Illegal argument: %s"
 msgstr "E125: 잘못된 인자: %s"
 
 #: ../eval.c:17323
-#, fuzzy, c-format
+#, c-format
 msgid "E853: Duplicate argument name: %s"
-msgstr "중복된 필드 명: %s"
+msgstr "E853: 중복된 인자 이름입니다: %s"
 
-#: ../eval.c:17416
+#: ../eval.c:19481
 msgid "E126: Missing :endfunction"
 msgstr "E126: :endfunction이 없습니다"
 
@@ -965,14 +961,14 @@ msgid "E129: Function name required"
 msgstr "E129: 함수 이름이 필요합니다"
 
 #: ../eval.c:17824
-#, fuzzy, c-format
+#, c-format
 msgid "E128: Function name must start with a capital or \"s:\": %s"
-msgstr "E128: 함수 이름은 대문자로 시작하거나 콜론을 포함해야 함: %s"
+msgstr "E128: 함수 이름은 대문자로 시작하거나 \"s:\"을(를) 포함해야 합니다: %s"
 
 #: ../eval.c:17833
-#, fuzzy, c-format
+#, c-format
 msgid "E884: Function name cannot contain a colon: %s"
-msgstr "E128: 함수 이름은 대문자로 시작하거나 콜론을 포함해야 함: %s"
+msgstr "E884: 함수 이름은 콜론을 포함할 수 없습니다: %s"
 
 #: ../eval.c:18336
 #, c-format
@@ -1265,9 +1261,9 @@ msgid "Pattern found in every line: %s"
 msgstr "여러 줄에서 패턴을 찾았습니다: %s"
 
 #: ../ex_cmds.c:4510
-#, fuzzy, c-format
+#, c-format
 msgid "Pattern not found: %s"
-msgstr "패턴을 찾을 수 없습니다"
+msgstr "패턴을 찾을 수 없습니다: %s"
 
 #: ../ex_cmds.c:4587
 msgid ""
@@ -1674,7 +1670,7 @@ msgid "E467: Custom completion requires a function argument"
 msgstr "E467: 사용자 완성은 함수 인자가 필요합니다"
 
 #: ../ex_docmd.c:5257
-#, fuzzy, c-format
+
 msgid "E185: Cannot find color scheme '%s'"
 msgstr "E185: 색 스킴 %s을(를) 찾을 수 없습니다"
 
@@ -1772,9 +1768,10 @@ msgid "E842: no line number to use for \"<slnum>\""
 msgstr "E842: \"<slnum>\"에 사용될 줄 번호가 없습니다"
 
 #: ../ex_docmd.c:7903
-#, fuzzy, c-format
+#, c-format
 msgid "E499: Empty file name for '%' or '#', only works with \":p:h\""
-msgstr "E499: '%'나 '#'에 대한 빈 파일 이름, 오로지 \":p:h\"와만 동작합니다"
+msgstr "E499: 빈 파일의 이름에 '%'또는 '#'가 사용되었습니다, 반드시 \":p:h\"만
+사용해야합니다"
 
 #: ../ex_docmd.c:7905
 msgid "E500: Evaluates to an empty string"
@@ -2458,7 +2455,7 @@ msgstr "E218: 자동명령이 너무 깊게 중첩되었습니다"
 #: ../fileio.c:7143
 #, c-format
 msgid "%s Auto commands for \"%s\""
-msgstr ""
+msgstr "%s는 \"%s\"에 대한 Auto commands 입니다"
 
 #: ../fileio.c:7149
 #, c-format
@@ -2640,18 +2637,17 @@ msgid "E17: \"%s\" is a directory"
 msgstr "E17: \"%s\"은(는) 디렉토리입니다"
 
 #: ../globals.h:1020
-#, fuzzy
 msgid "E900: Invalid job id"
-msgstr "E49: 스크롤 크기가 잘못되었습니다"
+msgstr "E900: job id가 잘못되었습니다"
 
 #: ../globals.h:1021
 msgid "E901: Job table is full"
-msgstr ""
+msgstr "E901: Job 테이블이 가득 찼습니다"
 
 #: ../globals.h:1022
 #, c-format
 msgid "E902: \"%s\" is not an executable"
-msgstr ""
+msgstr "E902: \"%s\" 는 실행 가능하지 않습니다"
 
 #: ../globals.h:1024
 #, c-format
@@ -2761,12 +2757,11 @@ msgstr "E485: %s 파일을 읽을 수 없습니다"
 
 #: ../globals.h:1054
 msgid "E37: No write since last change (add ! to override)"
-msgstr "E37: 마지막으로 고친 뒤 저장되지 않았습니다 (무시하려면 ! 더하기)"
+msgstr "E37: 마지막 수정이후 저장되지 않았습니다 (덮어쓰려면 뒤에 ! 를 붙이세요)"
 
 #: ../globals.h:1055
-#, fuzzy
 msgid "E37: No write since last change"
-msgstr "[마지막으로 고친 뒤 저장 안 함]\n"
+msgstr "E37: 마지막 수정이후 저장되지 않았습니다"
 
 #: ../globals.h:1056
 msgid "E38: Null argument"
@@ -2890,11 +2885,11 @@ msgstr "E488: 끝에 문자가 더 있습니다"
 
 #: ../globals.h:1093
 msgid "E78: Unknown mark"
-msgstr "E78: 모르는 마크"
+msgstr "E78: 알 수 없는 마크"
 
 #: ../globals.h:1094
 msgid "E79: Cannot expand wildcards"
-msgstr "E79: 만능 글자를 확장할 수 없습니다"
+msgstr "E79: Wildcard를 확장할 수 없습니다"
 
 #: ../globals.h:1096
 msgid "E591: 'winheight' cannot be smaller than 'winminheight'"
@@ -2906,7 +2901,7 @@ msgstr "E592: 'winwidth'는 'winminwidth'보다 커야 합니다"
 
 #: ../globals.h:1099
 msgid "E80: Error while writing"
-msgstr "E80: 쓰는 중에 에러"
+msgstr "E80: 저장 하는 중에 에러가 발생했습니다"
 
 #: ../globals.h:1100
 msgid "Zero count"
@@ -2943,9 +2938,8 @@ msgid "E764: Option '%s' is not set"
 msgstr "E764: 옵션 '%s'이(가) 설정되어 있지 않습니다"
 
 #: ../globals.h:1111
-#, fuzzy
 msgid "E850: Invalid register name"
-msgstr "E354: 잘못된 레지스터 이름: '%s'"
+msgstr "E850: 잘못된 레지스터 이름"
 
 #: ../globals.h:1114
 msgid "search hit TOP, continuing at BOTTOM"
@@ -3081,7 +3075,7 @@ msgstr "새 데이터베이스 더하기"
 
 #: ../if_cscope.c:87
 msgid "Query for a pattern"
-msgstr ""
+msgstr "패턴 쿼리"
 
 #: ../if_cscope.c:89
 msgid "Show this message"
@@ -3149,13 +3143,12 @@ msgid "E622: Could not fork for cscope"
 msgstr "E622: cscope를 fork할 수 없습니다"
 
 #: ../if_cscope.c:849
-#, fuzzy
 msgid "cs_create_connection setpgid failed"
-msgstr "cs_create_connection 실행이 실패했습니다"
+msgstr "cs_create_connection의 process groud id할당에(setpgid) 실패했습니다"
 
 #: ../if_cscope.c:853 ../if_cscope.c:889
 msgid "cs_create_connection exec failed"
-msgstr "cs_create_connection 실행이 실패했습니다"
+msgstr "cs_create_connection 실행에 실패했습니다"
 
 #: ../if_cscope.c:863 ../if_cscope.c:902
 msgid "cs_create_connection: fdopen for to_fp failed"
@@ -3176,12 +3169,12 @@ msgstr "E567: cscope 연결이 없습니다"
 #: ../if_cscope.c:1009
 #, c-format
 msgid "E469: invalid cscopequickfix flag %c for %c"
-msgstr ""
+msgstr "E469: %c는 %c에 대해 알 수 없는 cscopequickfix flag입니다"
 
 #: ../if_cscope.c:1058
 #, c-format
 msgid "E259: no matches found for cscope query %s of %s"
-msgstr ""
+msgstr "E259: %s에 대해서 cscope query %s중에 매치 되는 것을 찾을 수 없습니다."
 
 #: ../if_cscope.c:1142
 msgid "cscope commands:\n"
@@ -3289,7 +3282,7 @@ msgstr "너무 많은 \"+command\" \"-c command\" 혹은 \"--cmd command\" 인�
 
 #: ../main.c:154
 msgid "Invalid argument for"
-msgstr ""
+msgstr "올바르지 않은 인자입니다: "
 
 #: ../main.c:294
 #, c-format
@@ -3400,7 +3393,7 @@ msgstr "-e\t\t\tEx 상태 (\"ex\"와 같음)"
 
 #: ../main.c:2203
 msgid "-E\t\t\tImproved Ex mode"
-msgstr ""
+msgstr "-E\t\t\t향상된 Ex 모드"
 
 #: ../main.c:2204
 msgid "-s\t\t\tSilent (batch) mode (only for \"ex\")"
@@ -3448,7 +3441,7 @@ msgstr "-N\t\t\tVi와 호환되지 않음: 'nocompatible'"
 
 #: ../main.c:2215
 msgid "-V[N][fname]\t\tBe verbose [level N] [log messages to fname]"
-msgstr ""
+msgstr "-V[N][Fname]\t\tVerbose 형태 [level N] [log messages to fname]"
 
 #: ../main.c:2216
 msgid "-D\t\t\tDebugging mode"
@@ -3579,7 +3572,7 @@ msgid ""
 " jump line  col file/text"
 msgstr ""
 "\n"
-" 점프 라인  col 파일/텍스트"
+" 라인 점프  col 파일/텍스트"
 
 #. Highlight title
 #: ../mark.c:831
@@ -3587,6 +3580,8 @@ msgid ""
 "\n"
 "change line  col text"
 msgstr ""
+"\n"
+"라인 변경  col text"
 
 #: ../mark.c:1238
 msgid ""
@@ -3679,7 +3674,7 @@ msgstr "E305: %s의 스왑 파일을 찾을 수 없습니다"
 
 #: ../memline.c:839
 msgid "Enter number of swap file to use (0 to quit): "
-msgstr "사용할 스왑 파일 번호를 입력하십시오 (0은 끝내기): "
+msgstr "사용할 스왑 파일의 번호를 입력하세요 (끝내려면 0을 입력하세요): "
 
 #: ../memline.c:879
 #, c-format
@@ -3696,7 +3691,7 @@ msgid ""
 "Maybe no changes were made or Vim did not update the swap file."
 msgstr ""
 "\n"
-"어떤 수정도 없었거나 빔이 스왑 파일을 갱신하지 않은 것 같습니다."
+"어떤 수정도 없었거나 Vim이 스왑 파일을 갱신하지 않은 것 같습니다."
 
 #: ../memline.c:909
 msgid " cannot be used with this version of Vim.\n"
@@ -3717,17 +3712,19 @@ msgstr " 이 컴퓨터에서는 사용될 수 없습니다.\n"
 
 #: ../memline.c:924
 msgid "The file was created on "
-msgstr ""
+msgstr "이 파일은 이곳에서 생성되었습니다: "
 
 #: ../memline.c:928
 msgid ""
 ",\n"
 "or the file has been damaged."
 msgstr ""
+",\n"
+"혹은 파일이 손상되었습니다."
 
 #: ../memline.c:945
 msgid " has been damaged (page size is smaller than minimum value).\n"
-msgstr ""
+msgstr " 손상되었습니다 (page 크기가 최소 값보다 작습니다)."
 
 #: ../memline.c:974
 #, c-format
@@ -3750,7 +3747,7 @@ msgstr "E309: %s의 구역 1을 읽을 수 없습니다"
 
 #: ../memline.c:1065
 msgid "???MANY LINES MISSING"
-msgstr "???많은 줄을 잃어버림"
+msgstr "???많은 줄이 없습니다"
 
 #: ../memline.c:1076
 msgid "???LINE COUNT WRONG"
@@ -3758,11 +3755,11 @@ msgstr "???줄 번호가 잘못되었습니다"
 
 #: ../memline.c:1082
 msgid "???EMPTY BLOCK"
-msgstr "???빈 구역"
+msgstr "???빈 BLOCK"
 
 #: ../memline.c:1103
 msgid "???LINES MISSING"
-msgstr "???줄을 잃어버림"
+msgstr "???LINE이 없습니다"
 
 #: ../memline.c:1128
 #, c-format
@@ -3771,7 +3768,7 @@ msgstr "E310: 구역 1의 ID가 잘못되었습니다 (%s이(가) .swp 파일이
 
 #: ../memline.c:1133
 msgid "???BLOCK MISSING"
-msgstr "???구역 잃어버림"
+msgstr "???BLOCK이 없습니다"
 
 #: ../memline.c:1147
 msgid "??? from here until ???END lines may be messed up"
@@ -3792,7 +3789,8 @@ msgstr "E311: 복구 중단되었습니다"
 #: ../memline.c:1243
 msgid ""
 "E312: Errors detected while recovering; look for lines starting with ???"
-msgstr "E312: 복구 도중 에러 생겼습니다; ???로 시작하는 줄을 찾아보십시오"
+msgstr ""
+"E312: 복구 도중 에러 생겼습니다; ???로 시작하는 줄을 찾아보십시오"
 
 #: ../memline.c:1245
 msgid "See \":help E312\" for more information."
@@ -3879,7 +3877,7 @@ msgid ""
 "          modified: "
 msgstr ""
 "\n"
-"          수정: "
+"          수정됨: "
 
 #: ../memline.c:1559
 msgid "YES"
@@ -4013,11 +4011,11 @@ msgstr "E317: 잘못된 포인터 구역 id 2"
 #: ../memline.c:3070
 #, c-format
 msgid "E773: Symlink loop for \"%s\""
-msgstr ""
+msgstr "E773: \"%s\"에 대한 Symlink loop 입니다"
 
 #: ../memline.c:3221
 msgid "E325: ATTENTION"
-msgstr "E325: 주목"
+msgstr "E325: 주의"
 
 #: ../memline.c:3222
 msgid ""
@@ -4025,18 +4023,17 @@ msgid ""
 "Found a swap file by the name \""
 msgstr ""
 "\n"
-"Found a swap file by the name \""
+"swap 파일을 찾았습니다: "
 
 #: ../memline.c:3226
 msgid "While opening file \""
-msgstr "While opening file \""
+msgstr "해당 파일을 여는 도중에: "
 
-#: ../memline.c:3239
+#: ../memline.c:3239중
 msgid "      NEWER than swap file!\n"
-msgstr "      NEWER than swap file!\n"
+msgstr "      swap 파일보다 최신입니다!\n"
 
 #: ../memline.c:3244
-#, fuzzy
 msgid ""
 "\n"
 "(1) Another program may be editing the same file.  If this is the case,\n"
@@ -4044,21 +4041,17 @@ msgid ""
 "    file when making changes."
 msgstr ""
 "\n"
-"(1) 다른 프로그램이 같은 파일을 고치고 있는중일 수 있습니다.\n"
-"    만약 그렇다면 같은 파일을 두 개의 프로그램에서 고치지\n"
-"    않도록 조심하시기 바랍니다.\n"
+"(1) 다른 프로그램이 같은 파일을 고치고 있을 수 있습니다.\n"
+"    만약 그렇다면, 고치던 중인 서로 다른 두개의 프로그램을\n"
+"    함부로 끝내지 마시기 바랍니다."
 
 #: ../memline.c:3245
-#, fuzzy
 msgid "  Quit, or continue with caution.\n"
-msgstr "    끝내거나 위험을 감수하시려면 계속하십시오.\n"
+msgstr "  종료하시거나, 무시하고 계속 진행합니다.\n"
 
 #: ../memline.c:3246
-#, fuzzy
 msgid "(2) An edit session for this file crashed.\n"
-msgstr ""
-"\n"
-"(2) 파일을 고치다가 죽었었습니다.\n"
+msgstr "(2) 이 파일을 수정중이던 세션이 충돌하였습니다.\n"
 
 #: ../memline.c:3247
 msgid "    If this is the case, use \":recover\" or \"vim -r "
@@ -4074,7 +4067,7 @@ msgstr ""
 
 #: ../memline.c:3250
 msgid "    If you did this already, delete the swap file \""
-msgstr "    이미 복구하셨었다면 스왑파일 \""
+msgstr "    이미 복구하셨었다면 swap 파일을 삭제하세요 \""
 
 #: ../memline.c:3252
 msgid ""
@@ -4086,7 +4079,7 @@ msgstr ""
 
 #: ../memline.c:3450 ../memline.c:3452
 msgid "Swap file \""
-msgstr "스왑 파일 \""
+msgstr "Swap 파일 \""
 
 #: ../memline.c:3451 ../memline.c:3455
 msgid "\" already exists!"
@@ -4094,11 +4087,11 @@ msgstr "\"이 이미 존재합니다!"
 
 #: ../memline.c:3457
 msgid "VIM - ATTENTION"
-msgstr "빔 - 주목"
+msgstr "VIM - 주의"
 
 #: ../memline.c:3459
 msgid "Swap file already exists!"
-msgstr "스왑 파일이 이미 존재합니다!"
+msgstr "Swap 파일이 이미 존재합니다!"
 
 #: ../memline.c:3464
 msgid ""
@@ -4991,45 +4984,46 @@ msgstr ""
 #. Too many `('
 #: ../regexp_nfa.c:2037
 msgid "E872: (NFA regexp) Too many '('"
-msgstr ""
+msgstr "E872: (NFA regexp) '('가 너무 많습니다"
 
 #: ../regexp_nfa.c:2042
-#, fuzzy
 msgid "E879: (NFA regexp) Too many \\z("
-msgstr "E50: \\z(가 너무 많습니다"
+msgstr "E879: (NFA regexp) \\z( 가 너무 많습니다"
 
 #: ../regexp_nfa.c:2066
 msgid "E873: (NFA regexp) proper termination error"
-msgstr ""
+msgstr "E873: (NFA regexp) 적절치 않은 종료 에러입니다"
 
 #: ../regexp_nfa.c:2599
 msgid "E874: (NFA) Could not pop the stack !"
-msgstr ""
+msgstr "E874: (NFA) 스택에서 꺼낼 수 없습니다!"
 
 #: ../regexp_nfa.c:3298
 msgid ""
 "E875: (NFA regexp) (While converting from postfix to NFA), too many states "
 "left on stack"
 msgstr ""
+"E875: (NFA regexp) (postfix에서 NFA로 변환하던 도중), 너무 많은 상태(state)가"
+"스택에 남겨져 있습니다"
 
 #: ../regexp_nfa.c:3302
 msgid "E876: (NFA regexp) Not enough space to store the whole NFA "
-msgstr ""
+msgstr "E876: (NFA regexp) 모든 NFA를 저장하기위한 공간이 충분치 않습니다"
 
 #: ../regexp_nfa.c:4571 ../regexp_nfa.c:4869
 msgid ""
 "Could not open temporary log file for writing, displaying on stderr ... "
 msgstr ""
+"임시 로그파일은 수정을 위해 열 수는 없습니다, stderr에 표시합니다 ... "
 
 #: ../regexp_nfa.c:4840
 #, c-format
 msgid "(NFA) COULD NOT OPEN %s !"
-msgstr ""
+msgstr "(NFA) %s를 열 수 없습니다!"
 
 #: ../regexp_nfa.c:6049
-#, fuzzy
 msgid "Could not open temporary log file for writing "
-msgstr "E828: 쓰기 위해 undo을 열 수 없습니다: %s"
+msgstr "임시 로그파일은 수정을 위해 열 수는 없습니다"
 
 #: ../screen.c:7435
 msgid " VREPLACE"
@@ -5133,19 +5127,19 @@ msgstr "--- Included files "
 
 #: ../search.c:4106
 msgid "not found "
-msgstr "not found "
+msgstr "찾지 못했습니다 "
 
 #: ../search.c:4107
 msgid "in path ---\n"
-msgstr "in path ---\n"
+msgstr "경로 ---\n"
 
 #: ../search.c:4168
 msgid "  (Already listed)"
-msgstr "  (Already listed)"
+msgstr "  (이미 포함되어 있습니다)"
 
 #: ../search.c:4170
 msgid "  NOT FOUND"
-msgstr "  못 찾았음"
+msgstr "  찾지 못했습니다"
 
 #: ../search.c:4211
 #, c-format
@@ -5567,27 +5561,27 @@ msgid "E765: 'spellfile' does not have %<PRId64> entries"
 msgstr "E765: 'spellfile'에 %<PRId64> 항목이 없습니다"
 
 #: ../spell.c:8074
-#, fuzzy, c-format
+#, c-format
 msgid "Word '%.*s' removed from %s"
-msgstr "%s에서 단어 삭제됨"
+msgstr "%s 에서 단어 '%.*s' 가 삭제되었습니다"
 
 #: ../spell.c:8117
-#, fuzzy, c-format
+#, c-format
 msgid "Word '%.*s' added to %s"
-msgstr "%s에 단어 추가됨"
+msgstr "%s에 단어 '%.*s'가 추가되었습니다"
 
 #: ../spell.c:8381
 msgid "E763: Word characters differ between spell files"
-msgstr "E763: 단어가 spell 파일 간에 다릅니다"
+msgstr "E763: 단어의 스펠링이 spell 파일과 다릅니다"
 
 #: ../spell.c:8684
 msgid "Sorry, no suggestions"
-msgstr "죄송, 제안할 게 없습니다"
+msgstr "죄송합니다, 제안사항이 없습니다"
 
 #: ../spell.c:8687
 #, c-format
 msgid "Sorry, only %<PRId64> suggestions"
-msgstr "죄송, %<PRId64>개만 제안"
+msgstr "죄송합니다, %<PRId64>만 추천합니다"
 
 #. for when 'cmdheight' > 1
 #. avoid more prompt
@@ -5613,17 +5607,17 @@ msgstr "E753: 찾을 수 없음: %s"
 #: ../spell.c:9276
 #, c-format
 msgid "E778: This does not look like a .sug file: %s"
-msgstr "E778: .sug 파일이 아닌 것 같음: %s"
+msgstr "E778: .sug 파일이 아닌 것 같습니다: %s"
 
 #: ../spell.c:9282
 #, c-format
 msgid "E779: Old .sug file, needs to be updated: %s"
-msgstr "E779: 오래된 .sug 파일, 갱신 필요: %s"
+msgstr "E779: 오래된 .sug 파일, 갱신이 필요합니다: %s"
 
 #: ../spell.c:9286
 #, c-format
 msgid "E780: .sug file is for newer version of Vim: %s"
-msgstr "E780: .sug 파일이 새 버젼의 Vim용임: %s"
+msgstr "E780: .sug 파일이 Vim의 새 버전용 입니다: %s"
 
 #: ../spell.c:9295
 #, c-format
@@ -5645,7 +5639,7 @@ msgstr "E783: MAP 항목에 중복된 문자"
 msgid "No Syntax items defined for this buffer"
 msgstr "이 버퍼에 대해 정의된 구문 항목이 없습니다"
 
-#: ../syntax.c:3083 ../syntax.c:3104 ../syntax.c:3127
+#: ../syntax.c:3083 ../syntax.c:3104 ../syntax.nc:3127
 #, c-format
 msgid "E390: Illegal argument: %s"
 msgstr "E390: 잘못된 인자: %s"
@@ -5738,7 +5732,6 @@ msgid "E397: Filename required"
 msgstr "E397: 파일이름이 필요합니다"
 
 #: ../syntax.c:4221
-#, fuzzy
 msgid "E847: Too many syntax includes"
 msgstr "E77: 파일 이름이 너무 많습니다"
 
@@ -5758,9 +5751,8 @@ msgid "E399: Not enough arguments: syntax region %s"
 msgstr "E399: 충분치 않은 인자: 구문 영역 %s"
 
 #: ../syntax.c:4870
-#, fuzzy
 msgid "E848: Too many syntax clusters"
-msgstr "E391: 이런 구문 클러스터는 없습니다: %s"
+msgstr "E848: 구문 클러스터들이 너무 많습니다"
 
 #: ../syntax.c:4954
 msgid "E400: No cluster specified"
@@ -6056,9 +6048,8 @@ msgstr "빔: 입력 읽는 중 에러, 끝내는중...\n"
 #. This happens when the FileChangedRO autocommand changes the
 #. * file in a way it becomes shorter.
 #: ../undo.c:379
-#, fuzzy
 msgid "E881: Line count changed unexpectedly"
-msgstr "E834: 줄 갯수가 모르는 사이에 바뀌었습니다"
+msgstr "E881: 줄 수가 예기치 않게` 바뀌었습니다"
 
 #: ../undo.c:627
 #, c-format
